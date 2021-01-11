@@ -16,7 +16,7 @@ module.exports = {
                     setTimeout(async function(){ 
                         await tagmember.send(`tu as été kick par ${author}  pour  ${kickReason}` )
                         await tagmember
-                        .kick("${kickReason}")
+                        .kick(`${taguser} a été kick pour ${kickReason}`)
                         message.channel.send(` ${taguser} à été kick `);    
                     }, 100);
                 }else{
