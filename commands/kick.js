@@ -20,7 +20,7 @@ module.exports = {
                         message.channel.send(` ${taguser} à été kick `);    
                     }, 100);
                 }else{
-                message.reply("That user isn't in this guild!");
+                message.reply(":x: " +"cette utilisateur n est pas dans le serveur");
             }
         };
     }
