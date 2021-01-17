@@ -5,11 +5,11 @@ module.exports = {
         if (!message.mentions.users.size) {
             return message.reply('tu dois tagger un utilisateur pour le kick');
         }
-        if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("Tu n'as pas les permission de kick un membre")
+        if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(":x: " +"Tu n'as pas les permission de kick un membre")
             const author = message.author ;     
             let kickReason = args.join(" ").slice(22);
             const taguser = message.mentions.users.first();  
-            if (author == taguser)return message.reply('tu peux pas te kick toi même') ;
+            if (author == taguser)return message.reply(":x: " +'tu peux pas te kick toi même') ;
             if (taguser) {  
                 const tagmember = message.guild.member(taguser);         
                 if (tagmember) { 
